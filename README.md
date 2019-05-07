@@ -56,3 +56,16 @@ $ rostopic echo /move_base_simple/goal
 
 4. Start **Movo** using [Movo start up documentation](movo_instructions.md)
 
+### Testing
+- Focus on the terminal running `intent_recognizer`
+- Type `r` and give the directional command for example 
+
+*"Can you take me forward?"* 
+
+- If you need explanation, type `r` again in the same terminal and say something like 
+
+*"Why are you turning?"* 
+
+- If the `GoodBot` asks for POI disambiguation,  type `r` again and say something like
+
+*"first person"* or *"second"*
