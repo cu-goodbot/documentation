@@ -2,16 +2,23 @@
 ### Documentation for GoodBot project that didn't fit elsewhere.
 
 ## Steps to launch `cu-goodbot`
-1. Clone the three repositories 
+1. Prepare python environment by installing
+
+- Speech to text [requirements](https://github.com/cu-goodbot/IntentRecognizer/blob/master/src/README.md).
+- Download [YOLO V3 weights](https://pjreddie.com/media/files/yolov3.weights) into `SceneUnderstanding/src/config/`
+- Install python dependencies in [Requirements.txt](Requirements.txt).
+
+
+2. To build the package, clone the three repositories into the `src/` folder of your catkin workspace. 
   - [SceneUnderstanding](https://github.com/cu-goodbot/SceneUnderstanding)
   - [IntentRecognizer](https://github.com/cu-goodbot/IntentRecognizer)
   - [NavigationManager](https://github.com/cu-goodbot/NavigationManager)
   
-2. Run it through ROS
+3. Run it through ROS
 
 #### Building
 
-To build the package, clone it to the `src/` folder of your catkin workspace. Then navigate to the root of that workspace and run
+Navigate to the root of that workspace and run
 ```
 $ catkin_make
 ```
@@ -46,3 +53,6 @@ $ rostopic echo /intent
 ```
 $ rostopic echo /move_base_simple/goal
 ```
+
+4. Start **Movo** using [Movo start up documentation](movo_instructions.md)
+
