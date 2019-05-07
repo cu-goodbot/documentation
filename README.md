@@ -75,3 +75,7 @@ $ rostopic echo /movo/odometry/local_filtered
 - If the `GoodBot` asks for POI disambiguation,  type `r` again and say something like
 
 *"first person"* or *"second"*
+
+### Bonus
+
+Link to [video demo](https://www.youtube.com/watch?v=rbX-fL_OCeg&t=19s)
