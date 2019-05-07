@@ -6,7 +6,7 @@
 
 - Speech to text [requirements](https://github.com/cu-goodbot/IntentRecognizer/blob/master/src/README.md).
 - Download [YOLO V3 weights](https://pjreddie.com/media/files/yolov3.weights) into `SceneUnderstanding/src/config/`
-- Install python dependencies in [Requirements.txt](Requirements.txt).
+- Install python dependencies in [requirements.txt](requirements.txt).
 
 
 2. To build the package, clone the three repositories into the `src/` folder of your catkin workspace. 
