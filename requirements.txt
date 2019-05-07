@@ -1,0 +1,7 @@
+pyttsx
+numpy
+matplotlib
+SpeechRecognition
+pyaudio
+torch
+torchvision
