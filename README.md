@@ -25,7 +25,15 @@ $ catkin_make
 
 #### Running
 
-To run the ROS nodes, make sure you've sourced your workspace by running
+First start **Movo** using [Movo start up documentation](movo_instructions.md).
+
+Next, launch the Movo navigation software by running (on Movo)
+
+```
+$ roslaunch navigation_manager map_nav.launch
+```
+
+To run the GoodBot ROS nodes, make sure you've sourced your workspace by running
 ```
 $ source <your workspace root>/devel/setup.bash
 ```
@@ -43,7 +51,7 @@ $ roslaunch navigation_manager navigation_manager.launch
 
 
 #### Sanity check
-Check that the information is being published to the `/scene_info`, `/intent` and `/move_base_simple/goal` by running
+Check that the information is being published to the `/scene_info`, `/intent` and `/movo/odometry/local_filtered` by running
 ```
 $ rostopic echo /scene_info
 ```
@@ -51,10 +59,8 @@ $ rostopic echo /scene_info
 $ rostopic echo /intent
 ```
 ```
-$ rostopic echo /move_base_simple/goal
+$ rostopic echo /movo/odometry/local_filtered
 ```
-
-4. Start **Movo** using [Movo start up documentation](movo_instructions.md)
 
 ### Testing
 - Focus on the terminal running `intent_recognizer`
